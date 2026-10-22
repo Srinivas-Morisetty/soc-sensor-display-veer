@@ -1,0 +1,10 @@
+# Vivado simulation and compilation artifacts
+xsim.dir/
+*.log
+*.jou
+*.pb
+*.wdb
+*.vcd
+*.fsdb
+.Xil/
+dfx_runtime.txt
