@@ -1,3 +1,0 @@
-Signal,Width,Direction,Domain,Description
-clk,1,in,sys_clk,System clock (HCLK = PCLK)
-rst_n,1,in,async/sync,Active-low system reset

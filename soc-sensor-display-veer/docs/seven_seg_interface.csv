@@ -1,3 +1,0 @@
-Signal,Width,Direction,Description
-seg_out,8,out,Shared segment lines (dp + g..a)
-digit_sel,4,out,One-hot active digit select lines

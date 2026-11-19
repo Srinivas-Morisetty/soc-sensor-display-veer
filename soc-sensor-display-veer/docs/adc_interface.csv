@@ -1,3 +1,0 @@
-Signal,Width,Direction,Description
-adc_analog_in,12,in,12-bit behavioral analog input stimulus
-adc_irq,1,out,End-of-conversion interrupt to PIC
