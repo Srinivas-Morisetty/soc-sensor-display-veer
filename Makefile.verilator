@@ -1,0 +1,7 @@
+# Verilator Lint & Simulation Makefile
+VERILATOR = verilator
+VFLAGS = --lint-only -Wall -Wno-DECLFILENAME -Wno-UNUSED --sv
+
+.PHONY: lint
+lint:
+	$(VERILATOR) $(VFLAGS) -Irtl/bus rtl/bus/*.sv rtl/memory/*.sv rtl/peripherals/*.sv rtl/soc_top.sv

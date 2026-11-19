@@ -1,0 +1,4 @@
+Signal,Width,Direction,Description
+uart_tx,1,out,UART serial transmit line
+uart_rx,1,in,UART serial receive line
+uart_irq,1,out,UART RX-not-empty interrupt to PIC
