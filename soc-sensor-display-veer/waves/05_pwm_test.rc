@@ -1,0 +1,24 @@
+; Synopsys Verdi nWave Signal Configuration for 05_pwm_test.rc
+Magic 271485
+Revision Verdi_T-2022.06
+
+addGroup "1. Clock & Reset"
+addSignal -h 15 /tb_apb_pwm/PCLK
+addSignal -h 15 /tb_apb_pwm/PRESETn
+
+addGroup "2. External PWM Pin"
+addSignal -h 15 /tb_apb_pwm/pwm_out
+
+addGroup "3. APB Bus"
+addSignal -h 15 /tb_apb_pwm/PSEL
+addSignal -h 15 /tb_apb_pwm/PENABLE
+addSignal -h 15 /tb_apb_pwm/PWRITE
+addSignal -h 15 /tb_apb_pwm/PADDR[31:0]
+addSignal -h 15 /tb_apb_pwm/PWDATA[31:0]
+addSignal -h 15 /tb_apb_pwm/PRDATA[31:0]
+
+addGroup "4. PWM Internals"
+addSignal -h 15 /tb_apb_pwm/dut/period_reg[15:0]
+addSignal -h 15 /tb_apb_pwm/dut/duty_reg[15:0]
+addSignal -h 15 /tb_apb_pwm/dut/cnt[15:0]
+addSignal -h 15 /tb_apb_pwm/dut/ctrl_reg[1:0]

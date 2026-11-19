@@ -1,0 +1,4 @@
+Signal,Width,Direction,Description
+gpio_in,32,in,External GPIO input pins
+gpio_out,32,out,External GPIO output pins
+gpio_oe,32,out,Output enable per pin (from DIR register)

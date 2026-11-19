@@ -1,0 +1,5 @@
+VIP_Name,Interface_File,Modports,Clocking_Blocks,Assertions_Count,Protocol
+apb_vip,uvm_tb/apb_vip/apb_vip_if.sv,"master_mp,slave_mp,monitor_mp","drv_cb,mon_cb",4,AMBA APB3
+seven_seg_vip,uvm_tb/seven_seg_uvm_tb/seven_seg_if.sv,"dut_mp,mon_mp",mon_cb,2,7-Segment Multiplexed
+pwm_vip,uvm_tb/pwm_uvm_tb/pwm_if.sv,"dut_mp,mon_mp",mon_cb,2,PWM Output
+adc_vip,uvm_tb/adc_uvm_tb/adc_if.sv,"drv_mp,mon_mp",drv_cb,2,12-bit Parallel Analog Stimulus
