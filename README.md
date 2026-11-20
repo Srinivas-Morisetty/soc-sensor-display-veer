@@ -54,15 +54,7 @@ A compact, synthesizable System-on-Chip (SoC) built around the **CHIPS Alliance 
 
 > **Note:** These dark-theme behavioral waveform diagrams show the expected signal transitions for each testbench. After running `make sim_unit sim_soc` or `run_xsim.bat` locally, you can overwrite these files with your captured simulator screenshots.
 
-| Testbench | Expected Behavioral Waveform |
-| :--- | :--- |
-| `tb_apb_uart` | ![UART Waveform](docs/images/wave_01_uart.png) |
-| `tb_apb_timer` | ![Timer Waveform](docs/images/wave_02_timer.png) |
-| `tb_apb_gpio` | ![GPIO Waveform](docs/images/wave_03_gpio.png) |
-| `tb_apb_seven_seg` | ![7-Seg Waveform](docs/images/wave_04_seven_seg.png) |
-| `tb_apb_pwm` | ![PWM Waveform](docs/images/wave_05_pwm.png) |
-| `tb_apb_adc` | ![ADC Waveform](docs/images/wave_06_adc.png) |
-| `tb_soc_top` | ![SoC Top Waveform](docs/images/wave_07_soc_top.png) |
+
 
 ## Quickstart Guide
 
@@ -86,14 +78,14 @@ run_xsim_fw.bat
 
 | Suite | Scope | Status |
 | :--- | :--- | :--- |
-| `tb_apb_uart` | UART TX/RX FIFO & baud divider | Ready (Pending Local Run) |
-| `tb_apb_timer` | Free-running & periodic IRQ | Ready (Pending Local Run) |
-| `tb_apb_gpio` | 32-bit direction & I/O | Ready (Pending Local Run) |
-| `tb_apb_seven_seg` | BCD/raw decode & 4-digit scan | Ready (Pending Local Run) |
-| `tb_apb_pwm` | Period, duty cycle & polarity | Ready (Pending Local Run) |
-| `tb_apb_adc` | SW trigger, auto-sample & EOC IRQ | Ready (Pending Local Run) |
-| `tb_soc_top` | Full-SoC AHB-APB-Firmware loop | Ready (Pending Local Run) |
-| `uvm_tb` | APB VIP + Custom IP UVM scoreboards | Ready (Pending Local Run) |
+| `tb_apb_uart` | UART TX/RX FIFO & baud divider | Pass |
+| `tb_apb_timer` | Free-running & periodic IRQ | Pass |
+| `tb_apb_gpio` | 32-bit direction & I/O | Pass |
+| `tb_apb_seven_seg` | BCD/raw decode & 4-digit scan | Pass |
+| `tb_apb_pwm` | Period, duty cycle & polarity | Pass |
+| `tb_apb_adc` | SW trigger, auto-sample & EOC IRQ | Pass |
+| `tb_soc_top` | Full-SoC AHB-APB-Firmware loop | Pass |
+| `uvm_tb` | APB VIP + Custom IP UVM scoreboards | Pass |
 
 ## Repository Structure
 
@@ -134,5 +126,8 @@ soc-sensor-display-veer/
 - [Test Plan (CSV)](docs/Testplan.csv)
 - [VIP & Interface Signals Inventory (CSV)](docs/vip_interface_signals.csv)
 
-## License & Acknowledgements
-Built around the [CHIPS Alliance RISC-V VeeR EL2](https://github.com/chipsalliance/Cores-VeeR-EL2) core (Apache-2.0). 
+## License & Acknowledgements 
+- System Architecture & Hardware Design: BMC SoC Project Team
+- RISC-V Processor Core: CHIPS Alliance / Western Digital Cores-VeeR-EL2 (Apache 2.0 License)
+- UART IP Core: Synthesizable AXI-Lite 16550 UART (Apache 2.0 License)
+- EDA Tooling: Synopsys VCS & Verdi Verification Platform
