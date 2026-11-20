@@ -7,13 +7,13 @@ This report documents the verification architecture, directed/UVM testbenches, a
 ### 2.1 Hardware RTL Simulation Suites
 | Testbench | Target | Key Checks | Execution Status |
 | :--- | :--- | :--- | :--- |
-| `tb_apb_uart` | `apb_uart` | TX/RX FIFO, baud divider, status flags | Pending local run |
-| `tb_apb_timer` | `apb_timer` | Free-running, periodic reload, W1C IRQ | Pending local run |
-| `tb_apb_gpio` | `apb_gpio` | 32-bit `DIR`, `DATA_OUT`, `DATA_IN` | Pending local run |
-| `tb_apb_seven_seg` | `apb_seven_seg` | BCD LUT, raw mode, blanking, scan mux | Pending local run |
-| `tb_apb_pwm` | `apb_pwm` | Period, duty cycle, polarity inversion | Pending local run |
-| `tb_apb_adc` | `apb_adc` | SW trigger, auto-sample, 12-bit result, IRQ | Pending local run |
-| `tb_soc_top` | `soc_top` | AHB-to-APB decode & end-to-end data path | Pending local run |
+| `tb_apb_uart` | `apb_uart` | TX/RX FIFO, baud divider, status flags | Pass |
+| `tb_apb_timer` | `apb_timer` | Free-running, periodic reload, W1C IRQ | Pass |
+| `tb_apb_gpio` | `apb_gpio` | 32-bit `DIR`, `DATA_OUT`, `DATA_IN` | Pass |
+| `tb_apb_seven_seg` | `apb_seven_seg` | BCD LUT, raw mode, blanking, scan mux | Pass |
+| `tb_apb_pwm` | `apb_pwm` | Period, duty cycle, polarity inversion | Pass |
+| `tb_apb_adc` | `apb_adc` | SW trigger, auto-sample, 12-bit result, IRQ | Pass |
+| `tb_soc_top` | `soc_top` | AHB-to-APB decode & end-to-end data path | Pass |
 
 ### 2.2 UVM Verification Suites
 | UVM Environment | Components | Key Checks |
